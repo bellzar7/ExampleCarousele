@@ -1,0 +1,65 @@
+@import "../../UI/colors"
+
+.wrap
+  padding-top: 116px
+  padding-bottom: 60px
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 67px
+  &_top
+    position: relative
+    &__title
+      color: #212121
+      font-family: 'Angry', sans-serif
+      font-size: 40px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      text-transform: uppercase
+      margin-bottom: 0
+      position: relative
+      z-index: 1
+      & > span
+        color: #4A34E5
+    &__back
+      color: #F6F8FF
+      text-align: center
+      font-family: 'Montserrat', sans-serif
+      font-size: 95px
+      font-style: normal
+      font-weight: 900
+      line-height: normal
+      letter-spacing: 0.95px
+      text-transform: uppercase
+      position: absolute
+      top: -80%
+      z-index: 0
+  &_bottom
+    width: 100%
+
+
+@media (max-width: 1180px)
+  .wrap
+    &_top
+      &__back
+        top: -100%
+        font-size: 90px
+
+
+
+@media (max-width: 720px)
+  .wrap
+    padding-top: 79px
+    padding-bottom: 40px
+    gap: 40px
+    &_top
+      &__title
+        font-size: 30px
+        text-align: center
+      &__back
+        font-size: 35px
+        letter-spacing: 0.35px
+        text-align: center
+        top: -30%
+        width: 100%

@@ -1,0 +1,30 @@
+$darkBlue: #0B062D
+$textColor: #212121
+$titleSpanBlue: #442CE9
+$mainBlue: #4A34E5
+$darkMainBlue: #2C16C7
+$mainYellow: #FCCB06
+$darkMainYellow: #E7B900
+
+@mixin backdrop
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  width: 100vw
+  height: 100vh
+  cursor: pointer
+  visibility: hidden
+  opacity: 0
+  z-index: 10
+  &_active
+    animation: activeBackdrop .3s forwards
+
+@keyframes activeBackdrop
+  from
+    opacity: 0
+    visibility: hidden
+  to
+    opacity: 1
+    visibility: visible
