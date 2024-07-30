@@ -14,6 +14,7 @@ export default () => {
     return (
         <div className={'customContainer'}>
             <h1>Приклад 2 (Бібліотека Swiper)</h1>
+            <a href="https://swiperjs.com/demos" target={'_blank'}>Приклади лібки</a>
         <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}

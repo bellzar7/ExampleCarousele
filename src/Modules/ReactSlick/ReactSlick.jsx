@@ -38,6 +38,7 @@ function MultipleItems() {
     return (
         <div className={'customContainer'}>
             <h1>Приклад 4 (Бібліотека React-Slick)</h1>
+            <a href="https://react-slick.neostack.com/docs/example" target={'_blank'}>Приклади лібки</a>
             <div className="slider-container">
                 <Slider {...settings}>
                     <div>
